@@ -10,7 +10,11 @@ public class Main {
         System.out.println("Hello and welcome!");
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner = null;
+        int number = scanner1.nextInt();
+
+        for (int i = 1; i <= number; i++) {
 
             // Press Shift+F9 to start debugging your code. We have set one breakpoint
             // for you, but you can always add more by pressing Ctrl+F8.
@@ -21,11 +25,10 @@ public class Main {
         int skladnik2 = 9;
 
 
-        Scanner scanner = new Scanner(System.in);
-            System.out.println("Podaj liczbe calkowita");
-            skladnik2 = scanner.nextInt();
-                    System.out.println(skladnik1 + skladnik2);
-
+        scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe calkowita");
+        skladnik2 = scanner.nextInt();
+        System.out.println(skladnik1 + skladnik2);
 
 
     }
